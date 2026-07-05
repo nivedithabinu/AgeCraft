@@ -167,10 +167,10 @@ function populateDashboard(date) {
         </div>
     </div>`;
 
-    const future = document.getElementById("future");
+    const futureContainer = document.getElementById("future");
 
-    if (future) {
-        future.innerHTML = future(dob, today);
+    if (futureContainer) {
+        futureContainer.innerHTML = future(dob, today);
     }
 
     historicData(dob.getFullYear(), dob.getMonth() + 1, dob.getDate()).then((data) => {
