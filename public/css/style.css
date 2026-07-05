@@ -422,10 +422,12 @@ input[type="date"]:focus {
     margin-top: 20px;
     position: relative;
     padding: 20px;
+    padding: 20px 0;
 }
 
 .timeline-container::before {
     position: absolute;
+    content: '';
     top: 34px;
     left: 40px;
     right: 40px;

@@ -174,7 +174,14 @@ function populateDashboard(date) {
     }
 
     historicData(dob.getFullYear(), dob.getMonth() + 1, dob.getDate()).then((data) => {
-        console.log("Historical Data Loaded:", data);
+        const historyContainer = document.getElementById("history-content");
+
+        if (historyContainer) {
+            historyContainer.innerHTML = `
+                <p><strong>Top Movie (${dob.getFullYear()}):</strong> ${data.movie}</p>
+                <p><strong>Historical Event:</strong> ${data.eventText}</p>
+            `;
+        }
     });
 
     number("animation-heart", 0, stats.heartbeat, 2000);

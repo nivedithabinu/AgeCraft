@@ -36,6 +36,7 @@
     padding: 15px 40px;
     z-index: 100;
     gap: 20px;
+<<<<<<< HEAD
 }
 
 .nav-left {
@@ -53,6 +54,8 @@
 .nav-right {
     display: flex;
     align-items: center;
+=======
+>>>>>>> 0b4c0a3 (initial commit)
 }
 
 .clock {
