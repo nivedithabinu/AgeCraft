@@ -1,6 +1,6 @@
 # ⏳ AgeCraft | Your Personalized & Interactive Life Statistics Dashboard
 
-> **Discover your timeline in seconds.** AgeCraft is your Frontend Web Application that calculates your life statistics and fetches information about your birthday that you may not know.
+**Discover your timeline in seconds.** AgeCraft is your Frontend Web Application that calculates your life statistics and fetches information about your birthday that you may not know.
 
 ## 🚀 Features
 
