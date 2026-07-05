@@ -52,18 +52,23 @@
 
     <section id="dashboard" class="dashboard-screen">
         <div class="nav">
-            <h2>Player Status: 
-                <span id="player-level" style="color: var(--accent);">Level 0</span>
-            </h2>
+            <div class="nav-left">
+                <h2>Player Status: 
+                    <span id="player-level" style="color: var(--accent);">Level 0</span>
+                </h2>
+            </div>
 
-            <select id="theme" class="theme-toggle">
-                <option value="dark">Dark</option>
-                <option value="cyberpunk">Cyberpunk</option>
-                <option value="ocean">Ocean</option>
-            </select>
+            <div class="nav-center">
+                <select id="theme" class="theme-toggle">
+                    <option value="dark">Dark</option>
+                    <option value="ocean">Ocean</option>
+                </select>
+                <div id="clock" class="clock">00d : 00h : 00m : 00s</div>
+            </div>
 
-            <div id="clock" class="clock">00d : 00h : 00m : 00s</div>
-            <button id="reset-btn">← End Session</button>
+            <div class="nav-right">
+                <button id="reset-btn">← End Session</button>
+            </div>
         </div>
 
         <div class="dashboard-grid">

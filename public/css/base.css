@@ -8,16 +8,6 @@
     --accent-glow: rgba(93, 202, 165, 0.6);
 }
 
-[data-theme="cyberpunk"] {
-    --bg-main: #050505;
-    --bg-surface: #0a0f0a;
-    --border: #003300;
-    --text-primary: #00ff00;
-    --text-secondary: #008800;
-    --accent: #00ff00;
-    --accent-glow: rgba(0, 255, 0, 0.6);
-}
-
 [data-theme="ocean"] {
     --bg-main: #0b132b;
     --bg-surface: #1c2541;

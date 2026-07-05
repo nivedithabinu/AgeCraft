@@ -58,6 +58,23 @@
 >>>>>>> 0b4c0a3 (initial commit)
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
 .clock {
     font-family: 'Inter', sans-serif;
     color: #9ca3af;

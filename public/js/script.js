@@ -175,13 +175,25 @@ function populateDashboard(date) {
 
     historicData(dob.getFullYear(), dob.getMonth() + 1, dob.getDate()).then((data) => {
         const historyContainer = document.getElementById("history-content");
+        
+        console.log("History Container:", historyContainer);
+        console.log("History Data:", data);
+        
+        historyContainer.innerHTML = `
+        <div class="fact-card">
+            <h3>🌍 Historical Event</h3>
+            <p>${data.eventText}</p>
+        </div>
 
-        if (historyContainer) {
-            historyContainer.innerHTML = `
-                <p><strong>Top Movie (${dob.getFullYear()}):</strong> ${data.movie}</p>
-                <p><strong>Historical Event:</strong> ${data.eventText}</p>
-            `;
-        }
+        <div class="fact-card">
+            <h3>🎬 Top Movie</h3>
+            <p>${data.movie}</p>
+        </div>
+
+        <div class="fact-card">
+            <h3>👶 Famous Birth</h3>
+            <p>${data.birthText}</p>
+        </div>`;
     });
 
     number("animation-heart", 0, stats.heartbeat, 2000);
