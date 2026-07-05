@@ -8,16 +8,6 @@
     --accent-glow: rgba(93, 202, 165, 0.6);
 }
 
-[data-theme="ocean"] {
-    --bg-main: #0b132b;
-    --bg-surface: #1c2541;
-    --border: #3a506b;
-    --text-primary: #ffffff;
-    --text-secondary: #8fa8cc;
-    --accent: #5bc0be;
-    --accent-glow: rgba(91, 192, 190, 0.6);
-}
-
 body {
     background: var(--bg-main);
     color: var(--text-primary);

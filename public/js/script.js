@@ -2,6 +2,7 @@ import { themeToggle } from "./modules/theme.js";
 import { historicData } from "./modules/history.js";
 import { analysis } from "./modules/analytics.js";
 import { future } from "./modules/future.js";
+import { generation, advice } from "./modules/overview.js";
 
 themeToggle();
 
@@ -171,6 +172,31 @@ function populateDashboard(date) {
 
     if (futureContainer) {
         futureContainer.innerHTML = future(dob, today);
+    }
+
+    const gen = generation(dob.getFullYear());
+    const adviceData = advice(year);
+    
+    const overviewContainer = document.getElementById("overview-content");
+    
+    if (overviewContainer) {
+        overviewContainer.innerHTML = `
+        <div class="facts-container" style="margin-top: 15px;">
+            <div class="fact-card">
+                <h3 style="margin-bottom: 5px;">👥 GENERATION</h3>
+                <p style="color: var(--accent); font-size: 18px;">${gen}</p>
+            </div>
+            
+            <div class="fact-card" style="flex: 2;">
+                <h3 style="margin-bottom: 5px;">🎯 LIFE FOCUS</h3>
+                <p style="font-size: 14px;">${adviceData.focus}</p>
+            </div>
+
+            <div class="fact-card" style="flex: 2;">
+                <h3 style="margin-bottom: 5px;">📚 SUGGESTED READING</h3>
+                <p style="font-size: 14px; font-style: italic;">${adviceData.books}</p>
+            </div>
+        </div>`;
     }
 
     historicData(dob.getFullYear(), dob.getMonth() + 1, dob.getDate()).then((data) => {

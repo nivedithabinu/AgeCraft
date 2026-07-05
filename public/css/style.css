@@ -122,7 +122,7 @@ body {
     line-height: 1.5;
 }
 
-.hero-description{
+.hero-description {
     color: #6e7681;
     margin-top: 18px;
     line-height: 1.7;
@@ -142,6 +142,10 @@ body {
     border: 1px solid rgba(48, 54, 61, 0.5);
     border-radius: 12px;
     padding: 30px;
+}
+
+.dashboard-section h2 {
+    margin-bottom: 20px !important;
 }
 
 .full-width{
@@ -430,10 +434,10 @@ input[type="date"]:focus {
 .timeline-container::before {
     position: absolute;
     content: '';
-    top: 34px;
+    top: 30px;
     left: 40px;
     right: 40px;
-    height: 2px;
+    height: 4px;
     background: #30363d;
     z-index: 1;
 }
@@ -443,16 +447,20 @@ input[type="date"]:focus {
     z-index: 2;
     text-align: center;
     background: #161b22; 
-    padding: 0 15px;
-    opacity: 0.2;
+    padding: 0 20px;
+    opacity: 0.5;
     transition: 0.1s;
 }
 
+.timeline-item.achieved {
+    opacity: 1;
+}
+
 .timeline-dot {
-    width: 18px;
-    height: 18px;
+    width: 24px !important;
+    height: 24px !important;
     background: #0d1117;
-    border: 2px solid #6e7681;
+    border: 3px solid #6e7681;
     border-radius: 50%;
     margin: 0 auto 15px auto;
     transition: 0.1s;
@@ -461,20 +469,21 @@ input[type="date"]:focus {
 .timeline-item.achieved .timeline-dot {
     background: #5dcaa5;
     border-color: #5dcaa5;
-    box-shadow: 0 0 15px rgba(93, 202, 165, 0.6);
+    box-shadow: 0 0 18px rgba(93, 202, 165, 0.6);
 }
 
 .timeline-content h3 {
-    font-size: 13px;
+    font-size: 15px;
     color: #e6edf3;
     margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
 .timeline-content p {
-    font-size: 12px;
-    color: #6e7681;
+    font-size: 14px;
+    color: #8b949e;
     font-family: 'Inter', sans-serif;
 }
 
@@ -484,4 +493,41 @@ button#button {
 
 button#button:active {
     transform: scale(0.99);
+}
+
+.sleek-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px !important;
+}
+
+.sleek-item {
+    background: rgba(22, 27, 34, 0.4);
+    border: 1px solid rgba(48, 54, 61, 0.5);
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.sleek-item:hover {
+    border-color: #5dcaa5;
+    background: rgba(30, 36, 44, 0.6);
+}
+
+.sleek-item h3 {
+    font-size: 13px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.sleek-item p {
+    font-size: 17px;
+    color: #e6edf3;
+    line-height: 1.6;
 }

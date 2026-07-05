@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const key = "1f1dc8150887a5b0f71e53cdc64c1376"; 
-=======
 const tmdb_key = "1f1dc8150887a5b0f71e53cdc64c1376"; 
->>>>>>> 0b4c0a3 (initial commit)
 
 export async function historicData(year, month, day) {
     const mm = month.toString().padStart(2, '0');
@@ -34,11 +30,7 @@ export async function historicData(year, month, day) {
     }
 
     try {
-<<<<<<< HEAD
-        const movieKey = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${key}&primary_release_year=${year}&sort_by=revenue.desc`);
-=======
         const movieKey = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${tmdb_key}&primary_release_year=${year}&sort_by=revenue.desc`);
->>>>>>> 0b4c0a3 (initial commit)
         
         if (movieKey.ok) {
             const movieData = await movieKey.json();
