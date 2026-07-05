@@ -35,6 +35,24 @@
     border-bottom: 1px solid #30363d;
     padding: 15px 40px;
     z-index: 100;
+    gap: 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
 }
 
 .clock {
