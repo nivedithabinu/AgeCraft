@@ -1,4 +1,4 @@
-const key = "YOUR_API_KEY_HERE"; 
+const key = "1f1dc8150887a5b0f71e53cdc64c1376"; 
 
 export async function historicData(month, day) {
     const m = month.toString().padStart(2, '0');
