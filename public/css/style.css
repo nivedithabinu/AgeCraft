@@ -10,43 +10,73 @@
 }
 
 body {
-    align-items: flex-start;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background: #0d1117;
+    background-image: radial-gradient(circle at 50% 0%, #16202d 0%, #0d1117 70%);
     color: #e6edf3;
-    padding: 50px 0;
+    margin: 0; 
+    padding: 20px;
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .hero h1 {
     font-size: 3rem;
-    background: linear-gradient(90deg, #5dcaa5, #e6edf3, #5dcaa5);
-    background-size: 200% auto;
+    background: linear-gradient(to right, #5dcaa5, #a3e6cd);
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
 }
 
 .hero .input-box {
+    display: flex;
+    flex-direction: column;
     background: rgba(22, 27, 34, 0.6);
     backdrop-filter: blur(10px);
     padding: 35px;
     border-radius: 16px;
-    border: 1px solid rgba(48, 54, 61, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     max-width: 400px;
-    margin: 0 auto;
+    -webkit-backdrop-filter: blur(16px);
+    width: 100%;
+    margin: 30px auto 0 auto;
+    gap: 15px;
 }
 
 .hero .input-box label {
     font-size: 14px;
     color: #9ca3af;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+.hero .input-box button {
+    width: 100%;
+    font-weight: 700;
+    margin-top: 12px;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(29, 158, 117, 0.3);
+}
+
+.hero .input-box button:hover {
+    box-shadow: 0 10px 20px rgba(90, 200, 160, 0.5);
 }
 
 .hero-tag {
@@ -305,4 +335,23 @@ button:hover {
     to {
         background-position: 200% center;
     }
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 14px 16px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: #e6edf3;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color-scheme: dark;
+}
+
+input[type="date"]:focus {
+    border-color: #5dcaa5;
+    box-shadow: 0 0 0 3px rgba(93, 202, 165, 0.15);
+    outline: none;
 }
