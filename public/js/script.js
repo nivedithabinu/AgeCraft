@@ -154,9 +154,9 @@ function populateDashboard(date) {
     </div>
 
     <div class="facts-container">
-        <div class="fact-card"><h3>☀️ Sun Trips</h3><p>${sun}</p></div>
-        <div class="fact-card"><h3>🌙 Moon Cycles</h3><p>${moon.toLocaleString()}</p></div>
-        <div class="fact-card"><h3>🐐 Zodiac</h3><p>${zodiac}</p></div>
+        <div class="fact-card"><h3>☀️ Sun Trips</h3><p>${stats.sun}</p></div>
+        <div class="fact-card"><h3>🌙 Moon Cycles</h3><p>${stats.moon.toLocaleString()}</p></div>
+        <div class="fact-card"><h3>🐐 Zodiac</h3><p>${stats.zodiac}</p></div>
     </div>`;
 
     progress.innerHTML = `
