@@ -4,13 +4,13 @@
 
 ## 🚀 Features
 
-* **Gamified Progression:** View your age as a "Player Level" alongside your exact lifetime down to the second.
+* **Gamified Progression:** View your age as a "Player Level" while viewing the dashboard.
 * **Lifetime Analytics:** Calculates estimated heartbeats, breaths taken, moon cycles, and sun trips.
-* **Future Timeline:** Automatically projects major upcoming milestones (e.g., when you turn 10,000 or 20,000 days old).
-* **Live API Integrations:** 
+* **Future Timeline:** Automatically displays major upcoming milestones (e.g., when you turn 10,000 or 20,000 days old).
+* **Live API Integrations:**
   * Fetches "On This Day" historical events and famous birthdays via the **Wikipedia REST API**.
-  * Retrieves the highest-grossing movie of your birth year via the **TMDB API**.
-* **Premium UI/UX:** Built with a modern, responsive "glassmorphism" aesthetic, smooth CSS animations, and a seamless Single Page Application (SPA) state transition.
+  * Retrieves the most successful movie of your birth year via the **TMDB API**.
+* **Premium UI/UX:** Built with a modern, glassmorphism design, thereby adding responsiveness.
 
 ## 🛠 Tech Stack : HTML, CSS, JS (DOM Manipulation)
 
