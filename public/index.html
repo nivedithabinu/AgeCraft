@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCraft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="intro" class="home-screen">
+        <p class="hero-tag">YOUR LIFE STATISTICS</p>
+        <h1>AgeCraft | Your Personalized Life Dashboard</h1>
+
+        <div class="input-box">
+            <input type="date" id="birth" name="birth" max="">
+            <button id="button">Analyze Your Profile</button>
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-screen">
+        <div class="nav">
+            <h2>Player Status: 
+                <span id="player-level" style="color: var(--accent);">Level 0</span>
+            </h2>
+
+            <select id="theme" class="theme-toggle">
+                <option value="dark">Dark</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="ocean">Ocean</option>
+            </select>
+
+            <div id="clock" class="clock">00d : 00h : 00m : 00s</div>
+            <button id="reset-btn">← End Session</button>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-section">
+                <h2 class="heading">📊 Age Overview</h2>
+                <div id="cards"></div>
+            </div>
+            
+            <div class="dashboard-section">
+                <h2 class="stats">📈 Lifetime Metrics</h2>
+                <div id="statistics"></div>
+            </div>
+            
+            <div class="dashboard-section">
+                <h2 class="insight">🎂 Birthday Insights</h2>
+                <div id="info"></div>
+            </div>
+            
+            <div class="dashboard-section">
+                <h2 class="analysis">❤️ Lifetime Analytics</h2>
+                <div id="analytics"></div>
+            </div>
+            
+            <div class="dashboard-section full-width">
+                <h2 class="life-progress">📅 Progress of Life</h2>
+                <div id="progress"></div>
+            </div>
+            
+            <div class="dashboard-section full-width">
+                <h2 class="timeline">🚀 Future Timeline!</h2>
+                <div id="future"></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
