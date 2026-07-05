@@ -1,8 +1,8 @@
 const key = "1f1dc8150887a5b0f71e53cdc64c1376"; 
 
-export async function historicData(month, day) {
-    const m = month.toString().padStart(2, '0');
-    const d = day.toString().padStart(2, '0');
+export async function historicData(year, month, day) {
+    const mm = month.toString().padStart(2, '0');
+    const dd = day.toString().padStart(2, '0');
 
     let e = "No major event found!";
     let b = "No major births found!";
@@ -30,7 +30,7 @@ export async function historicData(month, day) {
     }
 
     try {
-        const movieKey = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&primary_release_year=${year}&sort_by=revenue.desc`);
+        const movieKey = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${key}&primary_release_year=${year}&sort_by=revenue.desc`);
         
         if (movieKey.ok) {
             const movieData = await movieKey.json();
