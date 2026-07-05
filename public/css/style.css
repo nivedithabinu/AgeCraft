@@ -271,7 +271,6 @@ button:hover {
 .stats {
     flex: 1;
     padding: 18px;
-    background: #0d1117;
     border-radius: 6px;
     border: 1px solid #30363d;
 }
